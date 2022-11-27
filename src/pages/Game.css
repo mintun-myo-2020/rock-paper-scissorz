@@ -1,0 +1,25 @@
+.game {
+  display: flex;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.winner {
+  margin:auto;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Bloomberg';
+  src: local('Bloomberg'), url(../assets/fonts/Blomberg.otf) format('opentype');
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+
+h1 {
+  font-family:Bloomberg;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 0;
+}

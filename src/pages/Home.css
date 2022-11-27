@@ -1,0 +1,19 @@
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20%;
+}
+
+.gameType {
+    padding: 80px;
+    border-radius: 45%;
+    background-color: rgb(0, 184, 184);
+    transition-duration: .25s;
+}
+
+.gameType:hover {
+    background-color: rgb(0, 95, 95);
+    cursor: pointer;
+    transform: scale(1.25);
+}
+
