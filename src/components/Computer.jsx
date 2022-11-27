@@ -6,7 +6,8 @@ import rock from '../assets/rock.jpg';
 
 import "./Player.css"
 
-const options = [scissor, paper, rock]
+const options = [scissor, paper, rock];
+const choices = ["SCISSOR", "PAPER", "ROCK"];
 
 const Computer = (props) => {
 
@@ -24,6 +25,7 @@ const Computer = (props) => {
         <div className='card'>
 
             <img className='selection' src={selection} alt="test" />
+            <h2>{choices[props.selection]}</h2>
 
         </div>
     )

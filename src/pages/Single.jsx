@@ -47,6 +47,7 @@ function Single() {
       </h1>
       <div className='game'>
         <Player onSelect={getData} />
+        <h2 id='versus'>vs</h2>
         <Computer selection={comOption} />
       </div>
       <div className="winner">

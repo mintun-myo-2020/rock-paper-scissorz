@@ -6,7 +6,9 @@ import rock from '../assets/rock.jpg';
 
 import "./Player.css"
 
-const options = [scissor, paper, rock]
+const options = [scissor, paper, rock];
+const choices = ["SCISSOR", "PAPER", "ROCK"];
+
 
 const Player = (props) => {
 
@@ -15,7 +17,7 @@ const Player = (props) => {
     return (
         <div className='card'>
             <img className='selection' src={options[selection]} alt="test" />
-
+            <h2>{choices[selection]}</h2>
             <div className='options'>               
                 {options.map((option, i) => 
                     <div key={i} className='option' onClick={() => {
