@@ -13,6 +13,7 @@ const App = () => {
             <div className='container'>
                 <Routes>
                     <Route path='/' element={<Home />}/> 
+                    <Route path='/rockpaperscissorz' element={<Home />}/> 
                     <Route path='/single' element={<Single />}/> 
                     <Route path='/multi' element={<Multi />}/> 
                 </Routes>
