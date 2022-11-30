@@ -23,7 +23,7 @@ const Computer = (props) => {
 
     return (
         <div className='card'>
-
+            <h2 className="playerName">COMPUTER</h2>
             <img className='selection' src={selection} alt="test" />
             <h2>{choices[props.selection]}</h2>
 

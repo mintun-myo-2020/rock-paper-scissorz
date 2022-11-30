@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
+import { SocketContext } from '../pages/Multi';
+
 
 import scissor from '../assets/scissor.jpg';
 import paper from '../assets/paper.jpg';
@@ -10,9 +12,11 @@ const options = [scissor, paper, rock];
 const choices = ["SCISSOR", "PAPER", "ROCK"];
 
 
-const Player = (props) => {
+const Player = ({gameID}) => {
 
+    const socket = useContext(SocketContext);
     const [selection, setSelection] = useState(0);
+
 
     return (
         <div className='card'>
@@ -23,7 +27,7 @@ const Player = (props) => {
                 {options.map((option, i) => 
                     <div key={i} className='option' onClick={() => {
                         setSelection(i);
-                        props.onSelect(i);
+                        socket.emit("select-option", gameID ,i)
                         }}>
                         <img key={i} src={options[i]} alt={i}/>
                     </div>

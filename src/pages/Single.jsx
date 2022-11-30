@@ -1,7 +1,8 @@
-import './Game.css'
 import Player from '../components/Player'
 import Computer from '../components/Computer'
 import { useState, useEffect } from 'react'
+
+import './Game.css'
 
 function Single() {
 
@@ -42,16 +43,15 @@ function Single() {
 
   return (
     <div className="App">
-      <h1>
+      <h1 className='title'>
         Welcome to Scissorz-paperZ-sTONE
       </h1>
       <div className='game'>
         <Player onSelect={getData} />
-        <h2 id='versus'>vs</h2>
         <Computer selection={comOption} />
       </div>
       <div className="winner">
-        <h1>
+        <h1 className='title'>
           {winner} {streak} wins in a row
         </h1>
       </div>
