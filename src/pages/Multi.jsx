@@ -7,7 +7,7 @@ import { io } from 'socket.io-client';
 
 import './Game.css'
 
-const WS = 'http://18.142.142.156:8080';
+const WS = 'http://ecs-nlb-f9dfb4e29a7aec00.elb.ap-southeast-1.amazonaws.com:8080';
 export const SocketContext = React.createContext();
 export const socket = io.connect(WS);
 
