@@ -1,4 +1,4 @@
-# rockpaperscissorz
+# general-tiger-gun
 
 Personal Project to learn Websockets and react useContext Hook. This repo only contains the frontend, backend is on another repo.
 
