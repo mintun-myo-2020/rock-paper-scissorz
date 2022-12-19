@@ -1,6 +1,6 @@
 # general-tiger-gun
 
-Personal Project to practice/learn Websockets and context hooks. This repo only contains the frontend, backend is on another repo.
+Personal Project to get updated with Websockets and context hooks. This repo only contains the frontend, backend is on another repo.
 
 ## Description
 
