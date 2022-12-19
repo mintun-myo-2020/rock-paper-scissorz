@@ -6,7 +6,7 @@ Personal Project to get updated with Websockets and context hooks. This repo onl
 
 Traditional rock-paper-scissors game, with multiplayer feature implementing using socket.io and an express backend.
 
-#Reflection
+# Reflection
 This was a week long project built during my winter break in 2022. Project goals included using technologies I haven't practiced in a while, like reactjs, express and docker while learning new ones like websockets.
 
 Originally, it was meant to be a connect-four type of game, but I decided to change it to a rock-paper-scissors game in order to get more time for myself to focus on the backend, rather than the frontend. This frontend repo also allowed me to practice using Git Subtrees, by having an S3 bucket that is configured to have CI with the GH-pages subtree.
